@@ -22,6 +22,7 @@ const Pokemon = () => {
           signal: abortController.signal
         });
         setPoke(response.data);
+        console.log(response.data)
         setError('');
       } catch (error) {
         setError('Something went wrong!!', error)
